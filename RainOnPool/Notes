@@ -1,0 +1,19 @@
+Notes on obj coords:
+Table height is from -0.5 to 0.5, so it has a length of 2
+Translating all objects up 2 will make it look it is on top of it
+
+on default camera view:
+x is left and right, higher it is, further right
+z is front/back, higher it is, closer up
+
+Lights:
+*Point
+*Directional
+*Ambient
+*SpotLight on Bunny
+
+If w is 0, x,y,z is a vector of directional light 
+ Glfloat light_pos = {1.0, 1.0, 1.0, 0.0} 
+ 
+ Otherwise, it is position of point light 
+ Glfloat light_pos = {1.0, 1.0, 1.0, 1.0}
